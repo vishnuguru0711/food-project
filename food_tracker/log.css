@@ -1,0 +1,92 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    margin: 20px 0;
+}
+
+table {
+    margin-top: 20px;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.table {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.table th, .table td {
+    vertical-align:middle;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f2f2f2;
+}
+
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+
+.table-bordered th, .table-bordered td {
+    border: 1px solid #dee2e6;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+} 
+
+.navbar {
+    background-color: rgba(232, 220, 220, 0.9); /* Transparent background */
+    box-shadow: 0 4px 6px rgba(238, 13, 13, 0.1); /* Slight shadow for depth */
+    padding: 1rem 2rem;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.nav-link {
+    font-weight: 500;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #4CAF50; /* Highlight on hover */
+}
+
+
+/* Header Section */
+header {
+    background: linear-gradient(45deg, #b1ceed, #ccc);
+    color: rgb(173, 84, 84);
+    padding: 50px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}

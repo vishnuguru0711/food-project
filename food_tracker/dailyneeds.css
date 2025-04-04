@@ -1,0 +1,65 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: rgba(232, 220, 220, 0.9); /* Transparent background */
+    box-shadow: 0 4px 6px rgba(238, 13, 13, 0.1); /* Slight shadow for depth */
+    padding: 1rem 2rem;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.nav-link {
+    font-weight: 500;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #4CAF50; /* Highlight on hover */
+}
+
+
+
+
+
+
+
+
+/* Contact Section */
+.contact-section {
+    background-color: #c9ebfd;
+    padding: 10px 0;
+
+}
+
+
+/* Footer */
+footer {
+    background-color: #343a41;
+    padding: 20px 0;
+    text-align: center;
+    color: #555;
+}
+
+footer p {
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+
+
+

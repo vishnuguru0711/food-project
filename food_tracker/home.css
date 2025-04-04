@@ -1,0 +1,354 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: rgba(232, 220, 220, 0.9); /* Transparent background */
+    box-shadow: 0 4px 6px rgba(238, 13, 13, 0.1); /* Slight shadow for depth */
+    padding: 1rem 2rem;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.nav-link {
+    font-weight: 500;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #4CAF50; /* Highlight on hover */
+}
+
+/* Hero Section */
+.hero {
+    background: rgba(255, 255, 255, 0.7); /* Light white overlay for readability */
+    padding: 100px 0;
+    color: #3D3D3D; /* Muted dark gray */
+    text-align: center;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4); /* Subtle shadow for contrast */
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: #4E342E; /* Earthy brown title */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #3D3D3D; /* Muted dark gray text */
+}
+
+.hero .btn {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    background-color: #8BC34A; /* Natural green button */
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #558B2F; /* Darker green on hover */
+}
+
+/* Chat Icon and Window */
+#chat-icon img {
+    transition: transform 0.3s ease;
+}
+
+#chat-icon:hover img {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+#chat-window {
+    border-radius: 10px;
+}
+
+#chat-header {
+    background-color: #8BC34A;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+#chat-box {
+    border-bottom: 3px solid #ddd;
+}
+
+#message {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Features Section */
+.features h2 {
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #3D3D3D; /* Muted dark gray */
+}
+
+.feature-box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease;
+    padding: 20px;
+}
+
+.feature-box img {
+    margin-bottom: 20px;
+}
+
+.feature-box h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #4E342E; /* Earthy brown text */
+}
+
+.feature-box p {
+    color: #3D3D3D; /* Muted dark gray */
+}
+
+.feature-box:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #ffffff;
+    color: #3D3D3D; /* Muted dark gray */
+    padding: 20px;
+}
+
+footer a {
+    color: #8BC34A;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #3D3D3D;
+}
+
+/* Reduce Food Waste Section */
+.reduce-waste {
+    background-color: rgba(255, 255, 255, 0.85); /* Light background for better readability */
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.reduce-waste h2 {
+    font-size: 2.5rem;
+    color: #4E342E; /* Earthy brown title */
+    margin-bottom: 20px;
+}
+
+.reduce-waste p {
+    font-size: 1.2rem;
+    color: #3D3D3D; /* Softer gray text */
+}
+
+.reduce-waste .btn {
+    background-color: #8BC34A; /* Green button for emphasis */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.reduce-waste .btn:hover {
+    background-color: #558B2F; /* Darker green on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .features .feature-box {
+        margin-bottom: 30px;
+    }
+
+    .reduce-waste h2 {
+        font-size: 2rem;
+    }
+
+    .reduce-waste p {
+        font-size: 1rem;
+    }
+}
+
+
+
+/* General Section Styling */
+section {
+    padding: 50px 0;
+    margin: 0 auto;
+}
+
+/* Success Stories Section */
+.success-stories h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #558B2F;
+    text-align: center;
+}
+
+.story-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.story-card img {
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.story-card h4 {
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+.story-card p {
+    color: #555;
+}
+
+.story-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Get Involved Section */
+.get-involved h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #558B2F;
+    text-align: center;
+}
+
+.involve-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.involve-card i {
+    color: #558B2F;
+    margin-bottom: 20px;
+}
+
+.involve-card h4 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+.involve-card p {
+    color: #555;
+}
+
+.involve-card:hover {
+    transform: translateY(-10px);
+}
+
+.involve-card a {
+    background-color: #558B2F;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.involve-card a:hover {
+    background-color: #33691E;
+}
+
+/* Statistics Section */
+.stats-section {
+    background-color: #f4f4f4;
+}
+
+.stats-section h3 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #558B2F;
+    margin-bottom: 30px;
+}
+
+.stat-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 40px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.stat-box h3 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #33691E;
+}
+
+.stat-box p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #555;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .stat-box {
+        margin-bottom: 30px;
+    }
+
+    .story-card,
+    .involve-card {
+        margin-bottom: 30px;
+    }
+
+    .story-card img {
+        height: 180px;
+    }
+}

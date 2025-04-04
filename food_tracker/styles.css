@@ -1,0 +1,158 @@
+/* Navbar Styling */
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.navbar .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #333;
+    margin-right: auto; 
+}
+
+.navbar-nav {
+    display: flex;
+    margin-left: auto; 
+    gap: 1rem; 
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: #555;
+    transition: color 0.3s; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+/* General Body Styling */
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styling */
+.container {
+    padding: 30px;
+    margin-top: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Titles and Headings */
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+btndonate {
+    color: #fff;
+    background-color: #558B2F;
+    border-color: #558B2F;
+}
+
+/* List Styling */
+#dailyNeedsList {
+    margin-top: 20px;
+}
+
+#dailyNeedsList .list-group-item {
+    background-color: #fff;
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    max-width: 2000px; /* Set a max width for larger screens */
+    border-collapse: collapse;
+    margin: 20px auto; /* Center the table */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+table, th, td {
+    border: 1px solid #ddd; 
+}
+
+th, td {
+    padding: 15px; /* Increased padding for a cleaner look */
+    text-align: left;
+}
+
+th {
+    background-color: #007bff; /* Header background for contrast */
+    color: white; /* Header text color */
+}
+
+/* Footer Section */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.my-5 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+/* Button Styling */
+.button {
+    background-color: #558B2F; 
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+.button:hover {
+    background-color: #558B2F; 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column; 
+    }
+
+    .container {
+        padding: 15px; 
+    }
+
+    table {
+        max-width: 100%; /* Full width on smaller screens */
+    }
+}

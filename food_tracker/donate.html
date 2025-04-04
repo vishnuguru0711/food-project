@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Food - Food Donation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="donate.css">
+</head>
+
+<body>
+
+    <section class="hero">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="about.html">
+                    <img src="/Users/srirampurushothaman/Documents/food_tracker/logo2.webp" alt="Logo" style="width:40px;">Food Donation Tracker
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link " href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active " href="donate.html">Donate Food</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="log.html">Tracker</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dailyneeds.html">Today's Needs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dailyneedsform.html">Submit Daily Needs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section> <!-- Suggested Donations Section -->
+<section class="suggestions-section py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center">Suggested Food Donations</h2>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="suggestion-box text-center">
+                    <i class="fa fa-carrot fa-2x"></i>
+                    <h5>Vegetables</h5>
+                    <p>Fresh or canned vegetables that are nutritious and easy to distribute.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="suggestion-box text-center">
+                    <i class="fa fa-seedling fa-2x"></i>
+                    <h5>Rice</h5>
+                    <p>Staple food that is in high demand across orphanages.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="suggestion-box text-center">
+                    <i class="fa fa-bread-slice fa-2x"></i>
+                    <h5>Bread</h5>
+                    <p>Freshly baked bread or packaged bread with a long shelf life.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+   
+    
+
+
+    <!-- SVG Section Divider -->
+    <div class="divider"></div>
+
+     <!-- Food Donation Form Section -->
+     <div class="container my-5">
+        <h2 class="text-center mb-4">Donate Your Leftover Food</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form id="foodDonationForm">
+                    <div class="mb-3">
+                        <label for="donorName" class="form-label">Your Name</label>
+                        <i class="fa fa-user"></i>
+                        <input type="text" id="donorName" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="contact" class="form-label">Contact Number</label>
+                        <i class="fa fa-phone"></i>
+                        <input type="tel" id="contact" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Your Email</label>
+                        <i class="fa fa-envelope"></i>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="foodType" class="form-label">Type of Food</label>
+                        <i class="fa fa-utensils"></i>
+                        <input type="text" id="foodType" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="quantity" class="form-label">Quantity (in kilograms)</label>
+                        <i class="fa fa-weight"></i>
+                        <input type="number" id="quantity" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="pickupTime" class="form-label">Preferred Pickup Time</label>
+                        <i class="fa fa-clock"></i>
+                        <input type="datetime-local" id="pickupTime" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Pickup Address</label>
+                        <i class="fa fa-map-marker-alt"></i>
+                        <textarea id="address" class="form-control" rows="3" required></textarea>
+                    </div>
+
+                    <!-- Dynamic Orphanage Selection Section -->
+                    <div class="mb-3">
+                        <label for="orphanage" class="form-label">Select Orphanage</label>
+                        <select id="orphanage" class="form-select">
+                            <option value="">Select an orphanage</option>
+                            <!-- Options will be populated here from daily needs -->
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="pondicherryOrphanages" class="form-label">Orphanages in Pondicherry</label>
+                        <select id="pondicherryOrphanages" class="form-select">
+                            <option value="">Select an orphanage</option>
+                            <option data-email="srirampurushothaman2004@gmail.com">Pondicherry Children's Home</option>
+                            <option data-email="srirampurushothaman2004@gmail.com">Mother Teresa's Orphanage</option>
+                            <option data-email="srirampurushothaman2004@gmail.com">The Cluny Children's Home</option>
+                            <option data-email="srirampurushothaman2004@gmail.com">SOS Children's Village</option>
+                            <option data-email="srirampurushothaman2004@gmail.com">Sri Aurobindo Ashram Orphanage</option>
+                        </select>
+                    </div>
+
+                    <!-- Hidden input for orphanage email -->
+                    <input type="hidden" id="orphanageEmail" name="orphanageEmail">
+
+                    <button type="submit" class="btn btn-primary w-100">Donate Food</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Thank You Message (hidden initially) -->
+    <div id="thankYouMessage" class="text-center my-5" style="display: none;">
+        <h3>Thank you for your food donation!</h3>
+        <p>We will arrange the pickup at your preferred time.</p>
+    </div>
+
+   
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Fetch API Script -->
+    <script>
+        // Function to fetch daily needs and populate orphanage select field
+        async function loadDailyNeeds() {
+            try {
+                const response = await fetch('http://localhost:5001/api/dailyneeds');
+                const dailyNeeds = await response.json();
+
+                const orphanageSelect = document.getElementById('orphanage');
+                orphanageSelect.innerHTML = '<option value="">Select an orphanage</option>'; // Clear options
+
+                dailyNeeds.forEach(need => {
+                    const option = document.createElement('option');
+                    option.value = need.orphanage;
+                    option.text = `${need.orphanage} - ${need.foodItem} (${need.quantity} kg needed)`;
+                    orphanageSelect.appendChild(option);
+                });
+            } catch (error) {
+                console.error('Error fetching daily needs:', error);
+            }
+        }
+
+        // Update hidden orphanage email based on selection
+        document.getElementById('pondicherryOrphanages').addEventListener('change', function() {
+            const selectedOption = this.options[this.selectedIndex];
+            const email = selectedOption.getAttribute('data-email');
+            const orphanageEmailInput = document.getElementById('orphanageEmail');
+            
+            // Set the orphanage email in the hidden input field
+            orphanageEmailInput.value = email ? email : '';
+        });
+
+        window.onload = async () => {
+            await loadDailyNeeds();
+        };
+
+        // Handle form submission
+        const form = document.getElementById('foodDonationForm');
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const donorName = document.getElementById('donorName').value;
+            const contact = document.getElementById('contact').value;
+            const email = document.getElementById('email').value;
+            const foodType = document.getElementById('foodType').value;
+            const quantity = document.getElementById('quantity').value;
+            const pickupTime = document.getElementById('pickupTime').value;
+            const address = document.getElementById('address').value;
+            const orphanage = document.getElementById('orphanage').value;
+            const orphanageEmail = document.getElementById('orphanageEmail').value;
+
+            fetch('http://localhost:5001/api/donations', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    donorName,
+                    contact,
+                    email,
+                    foodType,
+                    quantity,
+                    pickupTime,
+                    address,
+                    orphanage,
+                    orphanageEmail,  // Include orphanage email in the request
+                }),
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Success:', data);
+                form.reset(); // Reset the form after submission
+                document.getElementById('thankYouMessage').style.display = 'block'; // Show thank you message
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+        });
+    </script>
+    
+</body>
+
+<!-- Statistics Section -->
+<section class="stats-section text-center py-5">
+    <div class="container">
+        <h2>Our Impact So Far</h2>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="stat-box">
+                    <h3>1500+ Kg</h3>
+                    <p>Food Donated</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="stat-box">
+                    <h3>10</h3>
+                    <p>Orphanages Supported</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="stat-box">
+                    <h3>5000+</h3>
+                    <p>People Fed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials-section py-5">
+    <div class="container">
+        <h2 class="text-center">Hear From Our Beneficiaries</h2>
+        <div id="testimonialCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="testimonial text-center">
+                        <p>"Thanks to the generous donations, we’ve been able to feed hundreds of children every day!"</p>
+                        <h5>- Pondicherry Children's Home</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial text-center">
+                        <p>"The food donations have been a lifeline for our community."</p>
+                        <h5>- SOS Children's Village</h5>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </div>
+</section>
+ <!-- Footer -->
+ <footer class="footer1">
+    <p>&copy; 2024 Food Waste Tracker | All Rights Reserved</p>
+</footer>
+
+</html>

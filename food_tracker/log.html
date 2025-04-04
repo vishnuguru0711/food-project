@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Donate Food - Food Donation</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+        <link rel="stylesheet" href="log.css">
+    
+      
+</head>
+<body>
+
+ <section class="hero">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="about.html">
+                    <img src="/Users/srirampurushothaman/Documents/food_tracker/logo2.webp" alt="Logo" style="width:40px;">Food Donation Tracker
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link " href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="donate.html">Donate Food</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="log.html">Tracker</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dailyneeds.html">Today's Needs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dailyneedsform.html">Submit Daily Needs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Header -->
+    <header class="text-center py-5 bg-primary text-white">
+        <!-- Add your PNG image here -->
+     
+        <h1 class="display-4">Donation Tracker</h1>
+        <p class="lead">Track your food donations easily and efficiently.</p>
+    </header>
+
+    <!-- Donation Table -->
+    <div class="container my-5">
+        <div class="card shadow-sm">
+            <div class="card-header bg-success text-white">
+                <h2 class="text-center mb-0">Donation Records</h2>
+            </div>
+            <div class="card-body">
+                <table id="donationTable" class="table table-hover table-bordered">
+                    <thead class="table-light">
+                        <tr>
+                            <th>ID</th>
+                            <th>Donor Name</th>
+                            <th>Email</th>
+                            <th>Food Type</th>
+                            <th>Quantity (kg)</th>
+                            <th>Pickup Time</th>
+                            <th>Address</th>
+                            <th>Date</th>
+                            <th>status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Rows will be added here dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+ 
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="tracker.js"></script>
+</body>
+</html>

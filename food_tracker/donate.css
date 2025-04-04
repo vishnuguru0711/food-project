@@ -1,0 +1,258 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: rgba(232, 220, 220, 0.9); /* Transparent background */
+    box-shadow: 0 4px 6px rgba(238, 13, 13, 0.1); /* Slight shadow for depth */
+    padding: 1rem 2rem;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.nav-link {
+    font-weight: 500;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #4CAF50; /* Highlight on hover */
+}
+
+
+/* Hero Section */
+.hero1 {
+    background-size: cover;
+    background-position: center;
+    color: rgb(240, 228, 228);
+    text-shadow: 2px 2px 4px rgba(228, 15, 15, 0.7);
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+}
+
+
+
+
+/* Divider */
+.divider {
+    height: 30px;
+    background: #fff;
+}
+
+/* Form Section */
+.form-section {
+    padding: 60px 0;
+}
+
+.form-section h2 {
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form-card {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.3s;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+/* Thank You Message */
+#thankYouMessage {
+    margin-top: 40px;
+}
+
+/* Footer */
+.footer1 {
+    text-align: center;
+    padding: 20px;
+    background: #f8f9fa;
+    font-weight: 600;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+
+
+
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3, h5, p {
+    color: #333;
+}
+
+.section-heading {
+    font-weight: 700;
+}
+
+/* Statistics Section */
+.stats-section {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.stat-box {
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.stat-box h3 {
+    font-size: 2.5rem;
+    color: #00796b;
+}
+
+.stat-box p {
+    font-size: 1.2rem;
+    color: #004d40;
+    font-weight: 600;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    background-color: #fafafa;
+    padding: 60px 0;
+}
+
+.testimonial {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #333;
+}
+
+.testimonial h5 {
+    margin-top: 20px;
+    font-weight: 700;
+    color: #00796b;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    color: #00796b;
+}
+
+/* Suggested Donations Section */
+.suggestions-section {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.suggestion-box {
+    background-color: #e8f5e9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.suggestion-box:hover {
+    transform: scale(1.05);
+}
+
+.suggestion-box i {
+    color: #388e3c;
+    margin-bottom: 15px;
+}
+
+.suggestion-box h5 {
+    font-size: 1.5rem;
+    color: #2e7d32;
+}
+
+.suggestion-box p {
+    font-size: 1rem;
+    color: #4caf50;
+}
+
+/* Footer */
+.footer {
+    background-color: #00796b;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer p {
+    margin: 0;
+}
